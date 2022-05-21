@@ -1,0 +1,38 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#game{
+	width: 1500px;
+	height: 600px;
+	border: 1px solid black;
+}
+#character {
+	width: 60px;
+	height: 150px;
+	background-image: url(images/dino.png);
+	position: relative;
+	top: 450px;
+}
+.animate {
+	animation: jump 500ms linear;
+}
+#spike{
+	width: 60px;
+	height: 60px;
+	background-image: url(images/spike.png);
+	position: relative;
+	top: 390px;
+	left: 1440px;
+	animation: spike 1s infinite linear;
+}
+@keyframes spike{
+	0%{left:1440px;}
+	100%{left:-120px;}
+}
+@keyframes jump{
+	0%{top: 450px;}
+	30%{top: 300px}
+	70% {top: 300px}
+	100%{top: 450px}
+}
